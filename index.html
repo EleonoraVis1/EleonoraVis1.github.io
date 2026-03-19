@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eleonora Višnevskytė</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin:0;
+                background:#0f172a;
+                color:white;
+                scroll-behavior:smooth;
+            }
+
+            /* Header */
+            header{
+                padding:80px 20px 60px;
+                text-align:center;
+            }
+
+            h1{
+                font-size:48px;
+                margin-bottom:10px;
+            }
+
+            header p{
+                color:#94a3b8;
+            }
+
+            nav{
+                position:sticky;
+                top:0;
+                background:#0f172a;
+                padding:15px 0;
+                border-bottom:1px solid #1e293b;
+                z-index:1000;
+            }
+
+            nav a{
+                color:#38bdf8;
+                margin:0 20px;
+                text-decoration:none;
+                font-weight:500;
+                position:relative;
+            }
+
+            nav a::after{
+                content:"";
+                position:absolute;
+                left:0;
+                bottom:-5px;
+                width:0;
+                height:2px;
+                background:#38bdf8;
+                transition:0.3s;
+            }
+
+            nav a:hover::after{
+                width:100%;
+            }
+
+            section{
+                max-width:900px;
+                margin:auto;
+                padding:60px 20px;
+            }
+
+            h2{
+                margin-bottom:20px;
+                font-size:28px;
+            }
+
+            .project{
+                background:#1e293b;
+                padding:25px;
+                margin-top:20px;
+                border-radius:12px;
+                transition:0.3s;
+                box-shadow:0 0 0 rgba(56,189,248,0);
+            }
+
+            .project:hover{
+                transform:translateY(-5px);
+                box-shadow:0 10px 30px rgba(56,189,248,0.15);
+            }
+
+            .project-link{
+                display:inline-block;
+                margin-top:15px;
+                padding:10px 16px;
+                background:#38bdf8;
+                color:#0f172a;
+                text-decoration:none;
+                border-radius:8px;
+                font-weight:bold;
+                transition:0.2s;
+            }
+
+            .project-link:hover{
+                transform:scale(1.05);
+                opacity:0.9;
+            }
+
+            #contact p{
+                margin:8px 0;
+            }
+
+            footer{
+                text-align:center;
+                padding:40px;
+                opacity:0.6;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Eleonora Višnevskytė</h1>
+            <p>Computer Science Student</p>
+        </header>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I'm a CS student from Lithuania interested in programming, 3D modeling, and making things better wherever I go.
+            </p>
+        </section>
+
+        <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Mobile Fitness Tracking App</h3>
+            <p>
+                Strava-inspired app. User authentication, user search and following,
+                activity recording, daily notification setup, and weather forecast.
+
+                Implemented Firebase Authentication, Database, and Storage.
+                Focused on user accounts, data persistence, and mobile UI.
+            </p>
+            <a class="project-link" href="https://youtube.com/shorts/1FP6VElkuHM" target="_blank">Watch Demo</a>
+            <a class="project-link" href="https://github.com/EleonoraVis1/Mobile-App-Development-Final-Project">GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Running Information Interactive Website</h3>
+            <p>
+                The website is about the history of running and a healthy lifestyle.
+                All backend implemented using Django.
+            </p>
+            <a class="project-link" href="https://youtu.be/b465qJ98Ayo" target="_blank">Watch Demo</a>
+            <a class="project-link" href="https://github.com/EleonoraVis1/Web-Application-Development-Final-Project">GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>Restaurant Database System</h3>
+            <p>
+                The database represents a restaurant with tables, customers, menus,
+                meals, reviews, etc. It allows customers with allergies or intolerances
+                to adjust the menu and review dishes.
+            </p>
+            <a class="project-link" href="https://youtu.be/r-QSufn1hxk" target="_blank">Watch Demo</a>
+            <a class="project-link" href="https://github.com/EleonoraVis1/Database-Systems-Final-Project">GitHub</a>
+        </div>
+
+        <div class="project">
+            <h3>2D Platformer Game</h3>
+            <p>
+                Developed a Unity game using Unity and C#, featuring a dinosaur
+                character in a dungeon with interactions.
+            </p>
+            <a class="project-link" href="https://youtu.be/rGLYSkOht48" target="_blank">Watch Demo</a>
+        </div>
+
+        <div class="project">
+            <h3>JavaThread Chat App (Server/Clients)</h3>
+            <p>
+                Messenger-style chat system allowing a server and multiple clients.
+                Supports messaging between server and clients or client-to-client.
+                Built with Java Threads for multithreading.
+            </p>
+            <a class="project-link" href="https://youtu.be/VqpzHFs5mVw" target="_blank">Watch Demo</a>
+            <a class="project-link" href="https://github.com/EleonoraVis1/Chat-Application">GitHub</a>
+        </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: vishnevskite@email.com</p>
+            <p>GitHub: github.com/EleonoraVis1</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Eleonora Višnevskytė</p>
+        </footer>
+    </body>
+</html>
